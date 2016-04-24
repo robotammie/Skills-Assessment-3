@@ -4,8 +4,12 @@
     <title>Application Response</title>
 </head>
 <body>
+    <h2>Thank you for your submission.</h2>
 
-<!-- fill this in -->
+    <p>
+    Thank you, {{ firstname }} {{ lastname }}, for applying to be a {{ job_title }}. Your minimum salary requirement is {{ "${:,}".format(salary) }}.
+    </p>
 
+    <p>Someone from our hiring department will get back to you within two weeks.</p>
 </body>
 </html>
