@@ -1,10 +1,6 @@
-<!doctype html>
-<html>
-<head>
-    <title>Skills-Flask</title>
-    <link rel="stylesheet" href="static/styles.css"
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block body %}
     
     <h2>Application Form</h2>
 
@@ -23,7 +19,7 @@
         <br>
 
         <label for="field-salary">Salary Requirement: </label>
-        <input type="number" name="salary" id="field-salary">
+        <input type="number" name="salary" value=0 id="field-salary">
         <br>
 
         <label for="field-positon">Position Desired: </label>
@@ -37,5 +33,5 @@
         <input type="submit" value="Submit">
     
     </form>
-</body>
-</html>
+
+{% endblock %}
