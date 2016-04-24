@@ -2,10 +2,40 @@
 <html>
 <head>
     <title>Skills-HTML-CSS</title>
+    <link rel="stylesheet" href="styles.css"
 </head>
 <body>
+    
+    <h2>Application Form</h2>
 
-<!-- your html goes here -->
+    <div class="instructions">
+        <p>Please fill out the following information as completely as possible. First name and last name must be entered as they appear on your government ID.</p>
+    </div>
+    <br>
 
+    <form action="/application" method="POST">
+        <label for="field-firstname">First Name: </label>
+        <input type="text" name="firstname" id="field-firstname">
+        <br>
+
+        <label for="field-lastname">Last Name: </label>
+        <input type="text" name="lastname" id="field-lastname">
+        <br>
+
+        <label for="field-salary">Salary Requirement: </label>
+        <input type="number" name="salary" id="field-salary">
+        <br>
+
+        <label for="field-positon">Position Desired: </label>
+        <select name="position" id="field-position">
+            <option value="softeng">Software Engineer</option>
+            <option value="qaeng">QA Engineer</option>
+            <option value="product">Product Manager</option>
+        </select>
+        <br>
+
+        <input type="submit" value="Submit">
+    
+    </form>
 </body>
 </html>

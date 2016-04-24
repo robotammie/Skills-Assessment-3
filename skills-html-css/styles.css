@@ -1,2 +1,36 @@
 /* Your CSS goes here */
+form {
+    line-height: 2em;
+}
 
+label {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 150px;
+    text-align: left;
+}
+input {
+  display: inline-block;
+  float: left;
+  background-color: #ffffcc;
+}
+
+select {
+    background-color: #ffffcc;
+}
+
+input#field-lastname {
+    font-weight: bold;
+}
+
+div {
+    border: solid;
+    border-width: 1px ;
+    padding: 8px;
+}
+
+input[type=submit] {
+    display: inline-block;
+    float: left;
+}
